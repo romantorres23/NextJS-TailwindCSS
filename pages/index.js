@@ -12,5 +12,5 @@ export default function Home() {
 
       <h1>Welcome to SleepyMustache</h1>
     </div>
-  )
+  )  
 }

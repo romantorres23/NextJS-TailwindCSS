@@ -5,6 +5,11 @@
   margin: 0;
 }
 
+.container {
+  width: 80%;
+  margin: auto;
+}
+
 .title {
   margin: 0;
   font-size: 4rem;
