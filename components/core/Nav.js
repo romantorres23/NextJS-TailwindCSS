@@ -1,10 +1,10 @@
 import Link from 'next/link'
-import navStyles from '../styles/Nav.module.css'
+import navStyles from '../../styles/components/Nav.module.css'
 
 const Nav = () => {
   return (
     <nav className={navStyles.nav}>
-      <ul class='container flex flex-row'>
+      <ul className='container flex flex-row'>
         <li>
           <Link href='/'>Home</Link>
         </li>

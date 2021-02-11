@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 const wiki = () => {
     return (
-        <div class="container">
+        <div className="container">
             <Head>
                 <title>Wiki</title>
             </Head>

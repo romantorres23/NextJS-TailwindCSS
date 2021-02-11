@@ -19,7 +19,16 @@ a {
   box-sizing: border-box;
 }
 
-.container{
-  width: 80%;
-  margin: auto;
+@layer base {
+
+}
+
+@layer components {
+  .container {
+    @apply w-4/5 mx-auto;
+  }
+
+  /* .btn {
+    @apply ;
+  } */
 }

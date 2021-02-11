@@ -14,3 +14,7 @@
   text-decoration: underline;
   color: #000;
 }
+
+.nav ul li a:hover {
+  color: #4f83cc;
+}
