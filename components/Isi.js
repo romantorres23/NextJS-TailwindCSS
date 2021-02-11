@@ -3,7 +3,7 @@ import isiStyles from '../styles/Isi.module.css'
 const Isi = () => {
     return (
         <div class='container'>
-            <h3>Important Safety Information</h3>
+            <h3 class="text-3xl mb-2">Important Safety Information</h3>
             <p>
                 Reaches under door into adjacent room flee in terror at cucumber discovered 
                 on floor. I hate cucumber pls dont throw it at me inspect anything brought into the house, or 

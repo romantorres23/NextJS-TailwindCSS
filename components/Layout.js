@@ -2,16 +2,15 @@ import Nav from "./Nav"
 import Header from "./Header"
 import Isi from "./Isi"
 import Footer from "./Footer"
-
 import styles from '../styles/Layout.module.css'
 
 const Layout = ({children}) => {
     return (
         <>
-            <div className={styles.layoutcontainer}>
+            <div class="flex flex-col">
                 <Header />
                 <Nav />
-                <main className={styles.main}>
+                <main class="flex flex-col text-xl w-full">
                     {children}
                 </main>
                 <Isi />

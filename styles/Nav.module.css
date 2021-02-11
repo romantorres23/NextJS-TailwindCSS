@@ -9,23 +9,8 @@
   justify-content: flex-start;
 }
 
-.nav ul {
-  display: flex;
-  justify-content: left;
-  align-items: left;
-  list-style: none;
-  padding: 0;
-  width: 80%;
-  margin: auto;
-}
-
 .nav ul li a {
   margin: 5px 15px 5px 0;
   text-decoration: underline;
   color: #000;
 }
-/* 
-.nav ul li a.active {
-  color: #002f90;
-  font-weight: bold;
-} */

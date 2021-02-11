@@ -15,11 +15,11 @@ export default function Home() {
         <p>02/10/2021 - Roman A. Torres</p>
 
         <div class="flex">
-          <img src="/images/getting-started.jpg"></img>
-          <p>
+          <img src="/images/getting-started.jpg" class="w-400 border"/>
+          <p class="ml-5 mt-5">
             Congratulations on successfully installing SleepyLITE!.
             You can visit the <Link href='/'>documentation page</Link> to
-            learn more or hit the ground running by viewing the
+            learn more or hit the ground running by viewing the 
             <Link href='/'>getting started</Link> section.
           </p>
         </div>
