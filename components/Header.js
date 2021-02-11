@@ -3,7 +3,7 @@ import headerStyles from '../styles/Header.module.css'
 const Header = () => {
     return (
         <header className={headerStyles.header}>
-            <div className={headerStyles.container}>
+            <div class='container'>
                 <h1 className={headerStyles.title}>
                     <span>sleepy</span>LIGHT
                 </h1>

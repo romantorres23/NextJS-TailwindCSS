@@ -2,7 +2,7 @@ import isiStyles from '../styles/Isi.module.css'
 
 const Isi = () => {
     return (
-        <div className={isiStyles.container}>
+        <div class='container'>
             <h3>Important Safety Information</h3>
             <p>
                 Reaches under door into adjacent room flee in terror at cucumber discovered 
