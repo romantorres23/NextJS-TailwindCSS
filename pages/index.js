@@ -1,9 +1,15 @@
+import PropTypes from 'prop-types'
 import Head from 'next/head'
 import styles from '../styles/components/Layout.module.css'
 import Link from 'next/link'
 import Button from '../components/Button'
 
 export default function Home() {
+  const activateLasers = (e) => {
+    e.preventDefault();
+    alert('pew pew pew');
+  }
+  
   return (
     <>
       <Head>
@@ -15,8 +21,6 @@ export default function Home() {
       <div className='getting-started container mt-10 mb-10'>
         <h2>Getting Started</h2>
         <p>02/10/2021 - Roman A. Torres</p>
-
-        {/* <Button className='btn'>Button Component</Button> */}
 
         <div className='flex'>
           <img src='/images/getting-started.jpg' className='w-56 border'/>
@@ -41,6 +45,8 @@ export default function Home() {
             functionality. You may safely delete them.
           </p>
         </div>
+
+        <Button className='btn my-10' onClick={activateLasers}>Activate Lasers</Button>
       </div>
     </>
   )  

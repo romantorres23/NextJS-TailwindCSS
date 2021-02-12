@@ -28,7 +28,15 @@ a {
     @apply w-4/5 mx-auto;
   }
 
-  /* .btn {
-    @apply ;
-  } */
+  .btn {
+    @apply 
+    bg-blue-400
+    text-white 
+    font-bold
+    rounded-lg 
+    p-2 
+    m-1
+    focus:outline-none 
+    hover:opacity-75;
+  }
 }
