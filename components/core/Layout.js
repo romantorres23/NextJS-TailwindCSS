@@ -1,6 +1,7 @@
 import Nav from "./Nav"
 import Header from "./Header"
 import Isi from "./Isi"
+import Carousel from "./Carousel"
 import Footer from "./Footer"
 import styles from '../../styles/components/Layout.module.css'
 
