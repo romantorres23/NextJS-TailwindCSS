@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import Head from 'next/head'
 import styles from '../styles/components/Layout.module.css'
 import Link from 'next/link'
+import Carousel from "../components/core/Carousel"
 import Button from '../components/Button'
 
 export default function Home() {
