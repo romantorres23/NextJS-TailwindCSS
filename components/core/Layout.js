@@ -13,7 +13,7 @@ const Layout = ({children}) => {
                 <main className="flex flex-col text-xl w-full">
                     {children}
                 </main>
-                {/* <Isi /> */}
+                <Isi />
                 <Footer />
             </div>
         </>

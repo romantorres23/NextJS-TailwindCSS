@@ -4,26 +4,28 @@ import isiStyles from '../../styles/components/Isi.module.css'
 class Isi extends React.Component{
     constructor(props){
         super(props);
-        this.state = {
-            show: false
-        };
     }
 
     componentDidMount(){
         const isi = document.getElementById("non-sticky-isi");
-        
+        const stickIsi = document.getElementById("sticky-isi");
+        const triggerPosition = window.innerHeight - 178;
         window.onscroll = () => {
-            console.log('scrolled');
-            console.log(isi.offsetTop);
+            if (window.scrollY + triggerPosition > isi.offsetTop) {
+                stickIsi.style.opacity = 0;
+                stickIsi.style.height = 0;
+            } else {
+                stickIsi.style.opacity = 1;
+                stickIsi.style.height = '178px';
+            }
         }
     }
 
     render(){
-        const classes = this.state.show ? 'active bg-white border-t-2 fixed bottom-0 w-full':'bg-white border-t-2 fixed bottom-0 w-full';
         return (
             <>
-                <div id="sticky-isi" className={classes}>
-                    <div className='container h-44 w-full overflow-y-scroll'>
+                <div id="sticky-isi" className='active bg-white border-t-2 fixed bottom-0 w-full transition-opacity duration-250 ease-out'>
+                    <div className='container h-44 overflow-y-scroll'>
                     <h3 className="text-3xl mb-2">Important Safety Information</h3>
                     <p>
                         Reaches under door into adjacent room flee in terror at cucumber discovered 
@@ -136,7 +138,7 @@ class Isi extends React.Component{
                 </div>
                 </div>
                 <div id="non-sticky-isi" className="bg-white mt-10 border-t-2 w-full">
-                    <div className='container w-full'>
+                    <div className='container'>
                     <h3 className="text-3xl mb-2">Important Safety Information</h3>
                     <p>
                         Reaches under door into adjacent room flee in terror at cucumber discovered 
