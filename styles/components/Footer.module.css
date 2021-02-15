@@ -1,7 +1,9 @@
-.footer{
-  background-color: #4f83cc;
-  width: 100%;
-  margin: 0;
-  /* position: absolute;
-  bottom: 0; */
+@layer components {
+  .footer {
+    @apply bg-blue-400 w-full m-0;
+
+    &-content {
+      @apply my-2;
+    }
+  }
 }

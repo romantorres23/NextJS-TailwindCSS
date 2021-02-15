@@ -1,10 +1,10 @@
-import IsiContentStyles from '../styles/components/Button.module.css'
+// import IsiContentStyles from '../styles/components/IsiContent.module.css'
 
 const IsiContent = () => {
     return (
-        <>
-            <h2 className="text-2xl mt-1">SubHead</h2>
-            <p>
+        <div className="isi-container">
+            <h2 className="isi-subhead">SubHead</h2>
+            <p className="isi-content">
                 Reaches under door into adjacent room flee in terror at cucumber discovered 
                 on floor. I hate cucumber pls dont throw it at me inspect anything brought into the house, or 
                 cats secretly make all the worlds muffins, but leave fur on owners clothes. Purrr purr littel 
@@ -39,8 +39,8 @@ const IsiContent = () => {
                 purr when give birth or kitty kitty but being gorgeous with belly side up. 
             </p>
 
-            <h2 className="text-2xl mt-1">SubHead</h2>
-            <p>
+            <h2 className="isi-subhead">SubHead</h2>
+            <p className="isi-content">
                 I show my fluffy 
                 belly but it's a trap! if you pet it i will tear up your hand hide head under blanket so no one 
                 can see step on your keyboard while you're gaming and then turn in a circle bite nose of your 
@@ -97,8 +97,8 @@ const IsiContent = () => {
                 crap 💩. 
             </p>
 
-            <h2 className="text-2xl mt-1">SubHead</h2>
-            <p>
+            <h2 className="isi-subhead">SubHead</h2>
+            <p className="isi-content">
                 I’m so hungry i’m so hungry but ew not for that fall asleep on the washing machine. 
                 Purr meow meow mama but human clearly uses close to one life a night no one naps that long so i 
                 revive by standing on chestawaken!. I just saw other cats inside the house and nobody ask me
@@ -122,7 +122,7 @@ const IsiContent = () => {
                 under door into adjacent room but peer out window, chatter at birds, lure them to mouth russian 
                 blue.
             </p>
-        </>
+        </ div>
     )
 }
 

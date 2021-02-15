@@ -1,6 +1,13 @@
-.header{
-  background-color: #4f83cc;
-  width: 100%;
-  padding: 0 0 20px;
-  margin: 0;
+@layer components {
+    .header{
+        @apply bg-blue-400 w-full pb-5 m-0;
+
+        & .title {
+            @apply m-0 text-6xl text-left; 
+        }
+        
+        & .white {
+            @apply text-white;
+        }
+    }
 }

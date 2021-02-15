@@ -1,0 +1,12 @@
+@layer components {
+    .isi-container{
+
+        & .isi-subhead {
+            @apply text-2xl mt-1;
+        }
+        
+        & .isi-content{
+            @apply mb-5;
+        }
+    }
+}

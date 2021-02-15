@@ -1,6 +1,4 @@
-.btn{
-    color: white;
-    width: fit-content;
-    padding: 10px;
-    border-radius: .5rem;
+@layer components {
+    .btn { @apply  block bg-red-400 text-white  font-bold rounded-lg  p-2  m-1 focus:outline-none  hover:opacity-75;
+    }
 }

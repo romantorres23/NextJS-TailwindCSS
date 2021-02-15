@@ -1,0 +1,26 @@
+@layer components {
+    #sticky-isi {
+        @apply bg-white border-t-2 fixed bottom-0 w-full;
+    
+        & .expand-icon{
+            @apply absolute top-1 font-bold text-3xl leading-3 right-px cursor-pointer;
+        }
+
+        & .container {
+            @apply relative h-44 overflow-y-scroll overflow-x-hidden;
+
+        }
+
+        & .title {
+            @apply text-3xl mb-2 font-bold;
+        }
+    }
+
+    #non-sticky-isi {
+        @apply bg-white mt-10 border-t-2 w-full;
+
+        & .title {
+            @apply text-3xl mb-2 font-bold;
+        }
+    }
+}

@@ -1,0 +1,7 @@
+@tailwind components;
+
+@layer components {
+  .content section:first-child{
+    @apply my-10;
+  }
+}

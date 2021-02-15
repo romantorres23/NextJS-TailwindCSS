@@ -3,15 +3,15 @@ import Header from "./Header"
 import Isi from "./Isi"
 import Carousel from "./Carousel"
 import Footer from "./Footer"
-import styles from '../../styles/components/Layout.module.css'
+//import styles from '../../styles/components/Layout.module.css'
 
 const Layout = ({children}) => {
     return (
         <>
-            <div className="flex flex-col">
+            <div className="layout-container">
                 <Header />
                 <Nav />
-                <main className="flex flex-col text-xl w-full">
+                <main className="layout-main-content">
                     {children}
                 </main>
                 <Isi />

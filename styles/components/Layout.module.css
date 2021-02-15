@@ -1,0 +1,13 @@
+@layer components {
+    .layout-container{
+        @apply flex flex-col;
+
+        .layout-main-content{
+            @apply flex flex-col text-xl w-full;
+        }
+    }
+
+    .container {
+        @apply w-4/5 mx-auto;
+    }
+}

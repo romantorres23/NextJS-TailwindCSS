@@ -1,20 +1,14 @@
-.nav {
-  height: 50px;
-  width: 100%;
-  padding: 10px;
-  background: #e1e2e1;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
+@layer components {
+    .nav {
+        @apply h-12 w-full p-3 bg-gray-400 text-white flex;
 
-.nav ul li a {
-  margin: 5px 15px 5px 0;
-  text-decoration: underline;
-  color: #000;
-}
+        & .container {
+            @apply flex flex-row;
+        }
 
-.nav ul li a:hover {
-  color: #4f83cc;
+        & .container li a{
+            @apply my-1 ml-0 mr-4 underline text-black 
+            hover:text-blue-500;
+        }
+    }
 }
