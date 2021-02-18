@@ -1,7 +1,37 @@
-@tailwind components;
-
 @layer components {
-  .content section:first-child{
-    @apply my-10;
-  }
+    .getting-started {
+        @apply my-10;
+
+        >div {
+            @apply flex;
+        }
+
+        >div img{
+            @apply w-56 border;
+        }
+
+        >div p{
+            @apply ml-5 mt-5;
+        }
+    }
+
+    .sample-modules{
+        @apply my-10;
+
+        >div {
+            @apply flex;
+        }
+
+        >div img{
+            @apply w-56 border;
+        }
+
+        >div p{
+            @apply ml-5 mt-5;
+        }
+
+        .btn {
+            @apply my-10 mx-auto;
+        }
+    }
 }

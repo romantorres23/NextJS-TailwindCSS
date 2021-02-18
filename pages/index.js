@@ -24,9 +24,9 @@ export default function Home() {
           <h2>Getting Started</h2>
           <p>02/10/2021 - Roman A. Torres</p>
 
-          <div className='flex'>
-            <img src='/images/getting-started.jpg' className='w-56 border'/>
-            <p className='ml-5 mt-5'>
+          <div className=''>
+            <img src='/images/getting-started.jpg' className=''/>
+            <p className=''>
               Congratulations on successfully installing SleepyLITE!.
               You can visit the <Link href='/'>documentation page</Link> to
               learn more or hit the ground running by viewing
@@ -40,15 +40,15 @@ export default function Home() {
           <p>02/10/2021 - Roman A. Torres</p>
 
           <div className='flex'>
-            <img src='/images/modules.png' className='w-56 border'/>
-            <p className='ml-5 mt-5'>
+            <img src='/images/modules.png' className=''/>
+            <p className=''>
               By default there are 2 sample modules included with the framework. These
               modules demonstrate how to create your own modules, and impliment existing
               functionality. You may safely delete them.
             </p>
           </div>
 
-          <Button className='btn my-10 mx-auto' onClick={activateLasers}>Activate Lasers</Button>
+          <Button className='btn' onClick={activateLasers}>Activate Lasers</Button>
         </section>
       </div>
     </>

@@ -3,6 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Components */
 @import "./components/Layout.module.css";
 @import "./components/Header.module.css";
 @import "./components/Nav.module.css";
@@ -11,6 +12,9 @@
 @import "./components/IsiContent.module.css";
 @import "./components/Carousel.module.css";
 @import "./components/Button.module.css";
+
+/* Pages */
+@import "./pages/index.module.css";
 
 html,
 body {

@@ -1,6 +1,6 @@
 @layer components {
     .nav {
-        @apply h-12 w-full p-3 bg-gray-400 text-white flex;
+        @apply h-12 w-full p-3 bg-gray-300 text-white flex;
 
         & .container {
             @apply flex flex-row;
