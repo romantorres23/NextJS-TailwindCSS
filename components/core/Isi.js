@@ -9,17 +9,42 @@ class Isi extends React.Component{
 
     componentDidMount(){
         const isi = document.getElementById("non-sticky-isi");
-        const stickIsi = document.getElementById("sticky-isi");
+        const stickyIsi = document.getElementById("sticky-isi");
         const triggerPosition = window.innerHeight - 178;
-        window.onscroll = () => {
+        const expand = stickyIsi.querySelector('.expand-icon');
+        const collapse = stickyIsi.querySelector('.collapse-icon');
+        const page = document.querySelector("body");
+        
+        // Hides and shows sticky ISI based on stationary ISI position
+        function checkISI() {
             if (window.scrollY + triggerPosition > isi.offsetTop) {
-                stickIsi.style.opacity = 0;
-                stickIsi.style.height = 0;
+                stickyIsi.style.opacity = 0;
+                stickyIsi.style.height = 0;
             } else {
-                stickIsi.style.opacity = 1;
-                stickIsi.style.height = "178px";
+                stickyIsi.style.opacity = 1;
+                stickyIsi.style.height = "178px";
             }
         }
+
+        window.onscroll = () => {
+            checkISI();
+        }
+
+        checkISI();
+
+        expand.addEventListener("click", function() {
+            stickyIsi.style.height = "810px";
+            stickyIsi.querySelector(".container").style.height = "100%";
+            page.style.overflowY = "hidden";
+            stickyIsi.classList.add('expanded');
+        });
+
+        collapse.addEventListener("click", function() {
+            stickyIsi.style.height = "";
+            stickyIsi.querySelector(".container").style.height = "";
+            page.style.overflowY = "scroll";
+            stickyIsi.classList.remove('expanded');
+        });
     }
 
     render(){
@@ -27,6 +52,7 @@ class Isi extends React.Component{
             <>
                 <div id="sticky-isi">
                     <div className="expand-icon">+</div>
+                    <div className="collapse-icon">-</div>
                     <div className="container">
                         <h3 className="title">Important Safety Information</h3>
                         <IsiContent />

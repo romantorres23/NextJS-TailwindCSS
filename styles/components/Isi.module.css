@@ -1,18 +1,34 @@
 @layer components {
     #sticky-isi {
         @apply bg-white border-t-2 fixed bottom-0 w-full;
+        
+        & .container {
+            @apply relative h-44 overflow-y-scroll overflow-x-hidden;
+            
+        }
+        
+        & .title {
+            @apply text-3xl mb-2 font-bold;
+        }
     
-        & .expand-icon{
+        & .expand-icon, .collapse-icon{
             @apply absolute top-1 font-bold text-3xl leading-3 right-px cursor-pointer;
         }
 
-        & .container {
-            @apply relative h-44 overflow-y-scroll overflow-x-hidden;
-
+        & .expand-icon {
+            display: block;
         }
+        & .collapse-icon{
+            display: none;
+        }
+    }
 
-        & .title {
-            @apply text-3xl mb-2 font-bold;
+    #sticky-isi.expanded {
+        & .expand-icon {
+            display: none;
+        }
+        & .collapse-icon{
+            display: block;
         }
     }
 
